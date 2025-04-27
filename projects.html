@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Taimoor Qayyum</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="./head&foot.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./app.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo" id="logo">Taimoor.</a>
+        
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="./projects.html" class="active">Project</a>
+            <a href="./public/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Projects Hero Section -->
+    <section class="projects-hero">
+        <h1 class="projects-heading">My <span>Projects</span></h1>
+        <p class="projects-subheading">Showcasing my work across web development and software engineering</p>
+    </section>
+
+    <!-- Projects Filter Section -->
+    <section class="projects-filter">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="wordpress">WordPress</button>
+            <button class="filter-btn" data-filter="software">Software</button>
+        </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="projects-grid">
+        <!-- Web Projects -->
+        <div class="project-card" data-category="web wordpress">
+            <div class="project-img">
+                <img src="./assets/airbanderthelast.PNG" alt="Airbanderthelast E-commerce Website">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="https://airbanderthelast.shop/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#projectModal1" class="project-link modal-trigger"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Airbanderthelast</h3>
+                <p class="project-tech">WordPress, WooCommerce, Custom CSS</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="web wordpress">
+            <div class="project-img">
+                <img src="./assets/ramlinkin.PNG" alt="Ramlinkin Design Agency">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="https://ramlinkin.online/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#projectModal2" class="project-link modal-trigger"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Ramlinkin</h3>
+                <p class="project-tech">WordPress, Elementor, JavaScript</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="web wordpress">
+            <div class="project-img">
+                <img src="./assets/seeriwonkallc.PNG" alt="Seeriwonkallc Business Website">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="https://seeriwonkallc.cloud/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#projectModal3" class="project-link modal-trigger"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Seeriwonkallc</h3>
+                <p class="project-tech">WordPress, Custom Theme, Responsive Design</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="web wordpress">
+            <div class="project-img">
+                <img src="./assets/maranoase.PNG" alt="Maranoase Analytics Platform">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="http://maranoase.cloud/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#projectModal4" class="project-link modal-trigger"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Maranoase</h3>
+                <p class="project-tech">WordPress, Google Analytics Integration</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+            <div class="project-img">
+                <img src="./assets/gpa&cgpa-calculator.PNG" alt="GPA & CGPA - Calculator">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="https://gpa-cgpa-calculator-chi.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#projectModal5" class="project-link modal-trigger"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">GPA & CGPA - Calculator</h3>
+                <p class="project-tech">HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+        <div class="project-card" data-category="web">
+            <div class="project-img">
+                <img src="./assets/age-calculator.PNG" alt="Age Calculator">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="https://age-calculator-omega-steel.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#projectModal6" class="project-link modal-trigger"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Age Calculator</h3>
+                <p class="project-tech">HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+        <div class="project-card" data-category="web">
+            <div class="project-img">
+                <img src="./assets/Todo-web.PNG" alt="Todo List Web">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="https://todo-list-web-one.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#projectModal7" class="project-link modal-trigger"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Todo List Web</h3>
+                <p class="project-tech">HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+
+        <!-- Software Projects -->
+        <div class="project-card" data-category="software">
+            <div class="project-img">
+                <img src="./assets/cli-img.png" alt="Enhanced Mini OS">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="https://github.com/TaimoorQayyum/Enhanced-Mini-OS" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#projectModal8" class="project-link modal-trigger"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Enhanced Mini Operating System (MiniOS)</h3>
+                <p class="project-tech">C#, MySQL, Command Line</p>
+            </div>
+        </div>
+
+
+        <div class="project-card" data-category="software">
+            <div class="project-img">
+                <img src="./assets/ATM-Management-System.jpg" alt="ATM Management System">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="https://github.com/TaimoorQayyum/ATM-Management-System" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#projectModal9" class="project-link modal-trigger"><i class="fas fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">ATM Management System</h3>
+                <p class="project-tech">C#, Local storage, Command line</p>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!-- Project Modals -->
+    <div id="projectModal1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Airbanderthelast</h2>
+            <img src="./assets/airbanderthelast.PNG" alt="Airbanderthelast">
+            <p>AirbandertTheLast.shop is a comprehensive e-commerce platform developed to provide customers with a seamless shopping experience across various product categories. The website offers a wide range of products with intuitive navigation and secure checkout process.</p>
+            <div class="modal-details">
+                <div class="modal-detail">
+                    <h4>Technologies</h4>
+                    <p>WordPress, WooCommerce, Custom CSS, MySQL</p>
+                </div>
+                <div class="modal-detail">
+                    <h4>My Role</h4>
+                    <p>Full development and deployment of the e-commerce website including product setup, payment gateway integration, and responsive design implementation.</p>
+                </div>
+                <div class="modal-detail">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Responsive design for all devices</li>
+                        <li>Secure payment processing</li>
+                        <li>Product categorization and filtering</li>
+                        <li>User account management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-cta">
+                <a href="https://airbanderthelast.shop/" target="_blank" class="modal-btn">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ramlinkin Modal -->
+<div id="projectModal2" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Ramlinkin</h2>
+        <img src="./assets/ramlinkin.PNG" alt="Ramlinkin Design Agency">
+        <p>Ramlinkin is a modern design agency website built with WordPress and Elementor. The platform features a professional layout with intuitive navigation to showcase the agency's creative services and portfolio.</p>
+        <div class="modal-details">
+            <div class="modal-detail">
+                <h4>Technologies</h4>
+                <p>WordPress, Elementor, JavaScript, Custom CSS</p>
+            </div>
+            <div class="modal-detail">
+                <h4>My Role</h4>
+                <p>Full website development including custom Elementor sections, responsive design implementation, and performance optimization.</p>
+            </div>
+            <div class="modal-detail">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Interactive portfolio gallery</li>
+                    <li>Responsive design across all devices</li>
+                    <li>Custom animations and transitions</li>
+                    <li>Integrated contact forms</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-cta">
+            <a href="https://ramlinkin.online/" target="_blank" class="modal-btn">Visit Website</a>
+        </div>
+    </div>
+</div>
+
+<!-- Seeriwonkallc Modal -->
+<div id="projectModal3" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Seeriwonkallc</h2>
+        <img src="./assets/seeriwonkallc.PNG" alt="Seeriwonkallc Business Website">
+        <p>Seeriwonkallc is a professional business website developed with WordPress and a custom theme. The site provides a comprehensive online presence for the company with a focus on responsive design and user experience.</p>
+        <div class="modal-details">
+            <div class="modal-detail">
+                <h4>Technologies</h4>
+                <p>WordPress, Custom Theme, Responsive Design, PHP, MySQL</p>
+            </div>
+            <div class="modal-detail">
+                <h4>My Role</h4>
+                <p>Development of a custom WordPress theme, implementation of responsive design principles, and optimization for all device types.</p>
+            </div>
+            <div class="modal-detail">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Custom WordPress theme</li>
+                    <li>Mobile-first responsive design</li>
+                    <li>SEO optimization</li>
+                    <li>Service showcase sections</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-cta">
+            <a href="https://seeriwonkallc.cloud/" target="_blank" class="modal-btn">Visit Website</a>
+        </div>
+    </div>
+</div>
+
+<!-- Maranoase Modal -->
+<div id="projectModal4" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Maranoase</h2>
+        <img src="./assets/maranoase.PNG" alt="Maranoase Analytics Platform">
+        <p>Maranoase is a WordPress-based analytics platform that integrates with Google Analytics to provide powerful data visualization and reporting capabilities for businesses.</p>
+        <div class="modal-details">
+            <div class="modal-detail">
+                <h4>Technologies</h4>
+                <p>WordPress, Google Analytics Integration, JavaScript, Custom Dashboards</p>
+            </div>
+            <div class="modal-detail">
+                <h4>My Role</h4>
+                <p>Implementation of Google Analytics integration, creation of custom dashboards, and development of data visualization components.</p>
+            </div>
+            <div class="modal-detail">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Real-time analytics dashboard</li>
+                    <li>Custom reporting tools</li>
+                    <li>User behavior tracking</li>
+                    <li>Data visualization components</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-cta">
+            <a href="http://maranoase.cloud/" target="_blank" class="modal-btn">Visit Website</a>
+        </div>
+    </div>
+</div>
+
+<!-- GPA & CGPA Calculator Modal -->
+<div id="projectModal5" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>GPA & CGPA Calculator</h2>
+        <img src="./assets/gpa&cgpa-calculator.PNG" alt="GPA & CGPA - Calculator">
+        <p>A web-based calculator tool that helps students calculate their Grade Point Average (GPA) and Cumulative Grade Point Average (CGPA) easily. The application provides an intuitive interface for entering course grades and credit hours.</p>
+        <div class="modal-details">
+            <div class="modal-detail">
+                <h4>Technologies</h4>
+                <p>HTML, CSS, JavaScript, Responsive Design</p>
+            </div>
+            <div class="modal-detail">
+                <h4>My Role</h4>
+                <p>Full front-end development including UI design, calculation logic implementation, and responsive layout development.</p>
+            </div>
+            <div class="modal-detail">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Dynamic form for adding multiple courses</li>
+                    <li>Real-time GPA calculation</li>
+                    <li>Cumulative GPA tracking across semesters</li>
+                    <li>Mobile-friendly responsive design</li>
+                    <li>Intuitive user interface</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-cta">
+            <a href="https://gpa-cgpa-calculator-chi.vercel.app/" target="_blank" class="modal-btn">Visit Calculator</a>
+        </div>
+    </div>
+</div>
+
+<!-- Age Calculator Modal -->
+<div id="projectModal6" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Age Calculator</h2>
+        <img src="./assets/age-calculator.PNG" alt="Age Calculator">
+        <p>A simple yet powerful web application that calculates a person's exact age in years, months, and days based on their birth date. The calculator provides precise results with an easy-to-use interface.</p>
+        <div class="modal-details">
+            <div class="modal-detail">
+                <h4>Technologies</h4>
+                <p>HTML, CSS, JavaScript, Date API</p>
+            </div>
+            <div class="modal-detail">
+                <h4>My Role</h4>
+                <p>Complete development of the application including UI design, date calculation logic, and responsive layout implementation.</p>
+            </div>
+            <div class="modal-detail">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Accurate age calculation in years, months, and days</li>
+                    <li>User-friendly date input interface</li>
+                    <li>Responsive design for all devices</li>
+                    <li>Validation of input dates</li>
+                    <li>Clean, intuitive user interface</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-cta">
+            <a href="https://age-calculator-omega-steel.vercel.app/" target="_blank" class="modal-btn">Try Calculator</a>
+        </div>
+    </div>
+</div>
+
+<!-- Todo List Web -->
+<div id="projectModal7" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Todo List Web</h2>
+        <img src="./assets/Todo-web.PNG" alt="Todo List Web">
+        <p>A clean and functional web-based todo list application that helps users organize tasks and manage their daily activities. This application provides an intuitive interface for adding, completing, and managing todo items.</p>
+        <div class="modal-details">
+            <div class="modal-detail">
+                <h4>Technologies</h4>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="modal-detail">
+                <h4>My Role</h4>
+                <p>Full front-end development including UI design, task management functionality, and local storage implementation for data persistence.</p>
+            </div>
+            <div class="modal-detail">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Add, edit, and delete todo items</li>
+                    <li>Mark tasks as complete</li>
+                    <li>Filter tasks by status (all, active, completed)</li>
+                    <li>Local storage for persistent data</li>
+                    <li>Responsive design for all devices</li>
+                    <li>Clean and intuitive user interface</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-cta">
+            <a href="https://todo-list-web-one.vercel.app/" target="_blank" class="modal-btn">Visit Todo List</a>
+        </div>
+    </div>
+</div>
+
+<!-- Enhanced Mini OS Modal -->
+<div id="projectModal8" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Enhanced Mini Operating System (MiniOS)</h2>
+        <img src="./assets/cli-img.png" alt="Enhanced Mini OS">
+        <p>Enhanced Mini Operating System (MiniOS) is a command-line interface application built with C# that simulates basic operating system functionality. The system provides file management, process handling, and user authentication capabilities.</p>
+        <div class="modal-details">
+            <div class="modal-detail">
+                <h4>Technologies</h4>
+                <p>C#, MySQL, Command Line Interface, .NET Framework</p>
+            </div>
+            <div class="modal-detail">
+                <h4>My Role</h4>
+                <p>Full application development including system architecture, database integration, and implementation of OS functionalities.</p>
+            </div>
+            <div class="modal-detail">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>File system management</li>
+                    <li>Process handling and task management</li>
+                    <li>User authentication and permissions</li>
+                    <li>Command line interface with custom commands</li>
+                    <li>Database integration for persistent storage</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-cta">
+            <a href="https://github.com/TaimoorQayyum/Enhanced-Mini-OS" target="_blank" class="modal-btn">View on GitHub</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- ATM Management System Modal -->
+<div id="projectModal9" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>ATM Management System</h2>
+        <img src="./assets/ATM-Management-System.jpg" alt="ATM Management System">
+        <p>A command-line application that simulates ATM functionality including account management, transactions, and banking operations. The system provides a secure environment for managing banking operations through a simple interface.</p>
+        <div class="modal-details">
+            <div class="modal-detail">
+                <h4>Technologies</h4>
+                <p>C#, Local Storage, Command Line Interface, .NET Framework</p>
+            </div>
+            <div class="modal-detail">
+                <h4>My Role</h4>
+                <p>Full application development including the core banking logic, user interface, and local storage implementation for account data.</p>
+            </div>
+            <div class="modal-detail">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Account creation and management</li>
+                    <li>Secure transaction processing</li>
+                    <li>Balance inquiry and account history</li>
+                    <li>PIN management and security features</li>
+                    <li>Local storage for persistent account data</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-cta">
+            <a href="https://github.com/TaimoorQayyum/ATM-Management-System" target="_blank" class="modal-btn">View on GitHub</a>
+        </div>
+    </div>
+</div>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h3>Interested in working together?</h3>
+            <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+            
+            <div class="btn-box">
+                <a href="./services.html">Hire Me</a>
+                <a href="./contact.html">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Taimoor Qayyum. All Rights Reserved.</p>
+        
+        <div class="footer-social">
+            <a href="https://github.com/TaimoorQayyum" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/taimoor-qayyum-09129a27b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/taimoor._.qayyum/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
