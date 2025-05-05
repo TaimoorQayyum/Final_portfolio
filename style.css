@@ -307,7 +307,7 @@ section {
     margin-top: 50px;
 }
 
-/* Projects Section */
+/* Projects Section
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -390,6 +390,57 @@ section {
 
 .projects-cta {
     margin-top: 50px;
+} */
+
+.projects-hero {
+    padding: 120px 5% 50px;
+    text-align: center;
+    position: relative;
+}
+
+.projects-heading {
+    position: relative;
+    display: inline-block;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.projects-heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #030027;   
+    animation: Animation 1s ease forwards;
+    animation-delay: .6s; 
+}
+
+.projects-heading span {
+    color: #69a0b8;
+}
+
+.projects-subheading {
+    position: relative;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    opacity: 0.8;
+}
+
+.projects-subheading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #030027;   
+    animation: Animation 1s ease forwards;
+    animation-delay: .8s; 
 }
 
 /* Buttons Css */
