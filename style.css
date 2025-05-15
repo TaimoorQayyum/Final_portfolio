@@ -25,6 +25,7 @@ body {
     height: 100vh;
     padding: 0 10%;
     overflow: hidden;
+    padding-top: 50px;
 }
 
 .hero-content {
@@ -452,7 +453,7 @@ Projects Section
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 .contact-item i {
