@@ -127,3 +127,4 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         }
     }).catch(() => alert('Error sending message.'));
 });
+
