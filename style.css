@@ -453,7 +453,7 @@ Projects Section
 .contact-item {
     display: flex;
     align-items: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .contact-item i {
