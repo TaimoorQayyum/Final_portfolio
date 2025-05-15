@@ -108,7 +108,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     
 
     const form = e.target;
-    fetch('http://localhost:3001/api/contact', {
+    fetch('https://portfolio-yi7q.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
