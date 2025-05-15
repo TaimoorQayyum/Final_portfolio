@@ -100,3 +100,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         });
+
+
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+
+    const form = e.target;
+    fetch('http://localhost:3001/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            name: form.name.value,
+            email: form.email.value,
+            subject: form.subject.value,
+            message: form.message.value
+        })
+    }).then(res => res.json()).then(data => {
+        if (data.success) {
+            form.reset();
+            document.getElementById('form-success').style.display = 'block';
+            alert('Your message has been sent successfully!'); 
+        } else {
+            alert('Error sending message.');
+        }
+    }).catch(() => alert('Error sending message.'));
+});

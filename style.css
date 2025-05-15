@@ -166,11 +166,20 @@ body {
 .hero-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center 0%;   /* Moves image down vertically */
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(105, 160, 184, 0.3), 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.4s;
     position: relative;
     z-index: 2;
     animation: floatImage 4s ease-in-out infinite;
-    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4)); /* Adds shadow to the image itself */
+    background: #fff;          /* fallback background */
+}
+
+.hero-image img:hover {
+    transform: scale(1.04) rotate(-2deg);
+    box-shadow: 0 16px 48px rgba(105, 160, 184, 0.4), 0 4px 16px rgba(0,0,0,0.18);
 }
 
 @keyframes floatImage {
@@ -442,18 +451,17 @@ Projects Section
     margin-bottom: 20px;
 }
 
-.contact-info p {
-    margin-bottom: 30px;
-}
 
 .contact-details {
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    
 }
 
 .contact-item i {
