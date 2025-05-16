@@ -127,34 +127,4 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         }
     }).catch(() => alert('Error sending message.'));
 });
-document.addEventListener('DOMContentLoaded', function() {
-    const homeForm = document.getElementById('homeContactForm');
-    if (homeForm) {
-        homeForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            fetch('https://portfolio-yi7q.onrender.com/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    name: homeForm.name.value,
-                    email: homeForm.email.value,
-                    subject: homeForm.subject.value,
-                    message: homeForm.message.value
-                })
-            })
-            .then(res => res.json())
-            .then(data => {
-                if (data.success) {
-                    homeForm.reset();
-                    document.getElementById('form-success').style.display = 'block';
-                    alert('Your message has been sent successfully!');
-                } else {
-                    alert('Error sending message.');
-                }
-            })
-            .catch(() => alert('Error sending message.'));
-        });
-    }
-});
 

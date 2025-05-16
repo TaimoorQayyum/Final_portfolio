@@ -195,7 +195,7 @@ body {
 }
 /* Section Common Styles */
 section {
-    min-height: 100vh;
+    min-height: 40vh;
     padding: 100px 10% 70px;
 }
 
@@ -416,6 +416,7 @@ Projects Section
     overflow: hidden;
     z-index: 1;
     border: 2px solid #69a0b8;
+        transform: translate(500px, 0px);
 }
 
 .btn::before {
@@ -438,125 +439,91 @@ Projects Section
     width: 100%;
 }
 
-
-/* Contact Section */
-.contact-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 50px;
-}
-
-.contact-info h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-
-.contact-details {
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    
-}
-
-.contact-item i {
-    font-size: 1.5rem;
-    color: #69a0b8;
-    margin-right: 15px;
-}
-
-.contact-social {
-    display: flex;
-    gap: 15px;
-}
-
-.contact-social a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #69a0b8;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #69a0b8;
-    text-decoration: none;
+/* Call to Action */
+.cta {
+    padding: 0px 5%;
+    text-align: center;
     position: relative;
-    overflow: hidden;
-    transition: 0.5s;
-    z-index: 1;
 }
 
-.contact-social a::before {
+.ctaContent {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ctaContent::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 0;
+    right: 0;
+    width: 100%;
     height: 100%;
-    background: #69a0b8;
-    z-index: -1;
-    transition: 0.5s;
-}
-
-.contact-social a:hover {
-    color: #030027;
-}
-
-.contact-social a:hover::before {
-    width: 100%;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1rem;
-    transition: 0.3s;
-    border: 1px solid transparent;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #69a0b8;
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.form-group textarea {
-    height: 150px;
-    resize: none;
-}
-
-.submit-btn {
-    padding: 15px;
-    background: #69a0b8;
-    color: #030027;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: 2px solid #69a0b8;
-    position: relative;
-    overflow: hidden;
+    background: #030027;   
+    animation: Animation 1s ease forwards;
+    animation-delay: 2s; 
     z-index: 1;
 }
 
-.submit-btn::before {
+.ctaContent h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.ctaContent p {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.ctaButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 2;
+}
+
+.ctaButton a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    border: 2px solid #69a0b8;
+    background: #69a0b8;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #030027;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.ctaButton a:hover {
+    color: #69a0b8;
+}
+
+.ctaButton a:nth-child(2) {
+    background: transparent;
+    color: #69a0b8;
+}
+
+.ctaButton a:nth-child(2):hover {
+    color: #030027;
+}
+
+.ctaButton a:nth-child(2)::before {
+    background: #69a0b8;
+}
+
+.ctaButton a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -565,16 +532,13 @@ Projects Section
     height: 100%;
     background: #030027;
     z-index: -1;
-    transition: 0.3s;
+    transition: .5s;
 }
 
-.submit-btn:hover {
-    color: #69a0b8;
-}
-
-.submit-btn:hover::before {
+.ctaButton a:hover::before {
     width: 100%;
 }
+
 
 /* Animation */
 @keyframes Animation {
@@ -619,7 +583,7 @@ Projects Section
         margin-bottom: 50px;
     }
     
-    .btn-box {
+    .ctaButton {
         margin: 0 auto;
     }
     
@@ -631,6 +595,15 @@ Projects Section
     
     .projects-container {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .btn{
+        transform: translate(50px, 50px);
+    }
+}
+
+@media (max-width: 800px){
+    .btn{
+        transform: translate(50px, 50px);
     }
 }
 
@@ -654,6 +627,9 @@ Projects Section
     .contact-container {
         grid-template-columns: 1fr;
     }
+     .btn{
+        transform: translate(180px, -50px);
+    }
 }
 
 @media (max-width: 576px) {
@@ -670,15 +646,19 @@ Projects Section
         font-size: 22px;
     }
     
-    .btn-box {
+    .ctaButton {
         width: 300px;
     }
     
-    .btn-box a {
+    .ctaButton a {
         width: 140px;
         font-size: 16px;
     }
     
+    .btn{
+        transform: translate(120px, -40px);
+    }
+
     .hero-image {
         width: 280px;
         height: 280px;
@@ -694,14 +674,17 @@ Projects Section
 }
 
 @media (max-width: 400px) {
-    .btn-box {
+        .btn {
+        transform: translate(80px, -20px);
+    }
+    .ctaButton {
         width: 100%;
         flex-direction: column;
         height: auto;
         gap: 15px;
     }
     
-    .btn-box a {
+    .ctaButton a {
         width: 100%;
         height: 45px;
     }
